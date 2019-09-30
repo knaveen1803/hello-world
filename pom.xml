@@ -21,13 +21,12 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
+<distributionManagement>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://2-54-202-252-89.us-west-2.compute.amazonaws.com:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
 
   <build>
     <plugins>
